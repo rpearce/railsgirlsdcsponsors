@@ -10,41 +10,47 @@
     group1: {
       displayText: 'Venue Sponsor',
       sponsors: [
-        { sponsorName: 'BrowserMedia', imgURL: 'images/RubyNationVenueLogo.png' }
+        { sponsorName: 'RubyNation', imgURL: 'images/RubyNationVenueLogo.png', linkHref: 'http://www.rubynation.org' }
       ]
     },
     group2: {
       displayText: 'Gold Sponsors',
       sponsors: [
-        { sponsorName: 'LivingSocial', imgURL: 'images/LSLogo.jpg' },
-        { sponsorName: 'CustomInk', imgURL: 'images/custom_ink_logo.png' },
+        { sponsorName: 'LivingSocial', imgURL: 'images/LSLogo.jpg', linkHref: 'https://www.livingsocial.com' },
+        { sponsorName: 'CustomInk', imgURL: 'images/custom_ink_logo.png', linkHref: 'http://www.customink.com' },
       ]
     },
     group3: {
       displayText: 'Silver Sponsors',
       sponsors: [
-        { sponsorName: 'SocialDriver', imgURL: 'images/socialdriver-logo.png' },
-        { sponsorName: 'ModCloth', imgURL: 'images/Modcloth-logo.png' },
-        { sponsorName: 'Vox Media', imgURL: 'images/Vox-media-logo.jpg' }
+        { sponsorName: 'SocialDriver', imgURL: 'images/socialdriver-logo.png', linkHref: 'http://socialdriver.com' },
+        { sponsorName: 'ModCloth', imgURL: 'images/Modcloth-logo.png', linkHref: 'http://www.modcloth.com/' },
+        { sponsorName: 'Vox Media', imgURL: 'images/Vox-media-logo.jpg', linkHref: 'http://www.voxmedia.com' }
       ]
     },
     group4: {
       displayText: 'Bronze Sponsors',
       sponsors: [
-        { sponsorName: 'Spree', imgURL: 'images/spree-logo.png' },
-        { sponsorName: 'InfernoRed Technology', imgURL: 'images/infernored_logo.jpg' }
+        { sponsorName: 'Spree', imgURL: 'images/spree-logo.png', linkHref: 'http://spreecommerce.com' },
+        { sponsorName: 'InfernoRed Technology', imgURL: 'images/infernored_logo.jpg', linkHref: 'http://www.infernored.com' }
       ]
     },
     group5: {
       displayText: 'Swag Sponsors',
       sponsors: [
-        { sponsorName: 'stickermule', imgURL: 'images/sticker-mule-logo-thumb-1.png' }
+        { sponsorName: 'stickermule', imgURL: 'images/sticker-mule-logo-thumb-1.png', linkHref: 'http://www.stickermule.com' }
       ]
     },
     group6: {
+      displayText: 'Meetup Sponsors',
+      sponsors: [
+        { sponsorName: 'BrowserMedia', imgURL: 'images/browsermedialogo.png', linkHref: 'http://www.browsermedia.com' }
+      ]
+    },
+    group7: {
       displayText: 'Other Sponsors',
       sponsors: [
-        { sponsorName: 'RidePost', imgURL: 'https://s3.amazonaws.com/ridepost-dev/logo_w300.png' }
+        { sponsorName: 'RidePost', imgURL: 'https://s3.amazonaws.com/ridepost-dev/logo_w300.png', linkHref: 'https://www.ridepost.com' }
       ]
     }
   };
@@ -70,7 +76,7 @@
     for (var i = 0; i < group.sponsors.length; i++) {
       sponsorsHTML += '' +
         '<h1 class="sponsor-content-container pull-left">' +
-          '<a href="#" class="sponsor grid_4 alpha" style="background: url('+group.sponsors[i].imgURL+') no-repeat center center;">' +
+          '<a href="'+group.sponsors[i].linkHref+'" title="'+group.sponsors[i].sponsorName+'" class="sponsor grid_4 alpha" style="background: url('+group.sponsors[i].imgURL+') no-repeat center center;">' +
             group.sponsors[i].sponsorName +
           '</a>' +
         '</h1>';
