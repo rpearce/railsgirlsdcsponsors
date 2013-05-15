@@ -1,0 +1,48 @@
+/* Utility */
+.pull-left {
+  float: left;
+}
+
+.grid_12 {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.grid_4 {
+  width: 300px;
+  margin: 0 10px;
+}
+
+.grid_4.alpha {
+  margin: 0 10px 0 0;
+}
+
+.grid_4.omega {
+  margin: 0 0 0 10px;
+}
+
+/* Sponsor */
+.sponsor-group {
+  margin-bottom: 20px;
+}
+
+.sponsor-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sponsor-type {
+  color: #e0330c;
+  font-size: 26px;
+  margin: 0;
+}
+
+.sponsor {
+  width: 300px;
+  height: 150px;
+  text-indent: -9999px;
+  display: block;
+  text-decoration: none;
+  border-bottom: none;
+}
