@@ -1,10 +1,11 @@
 railsgirlsdcsponsors
 ====================
 
-['Check out the demo here'](http://rpearce.github.io/railsgirlsdcsponsors)
+[Check out the demo here](http://rpearce.github.io/railsgirlsdcsponsors)
 
 # Getting Started
-Just include the following code where you want it!
+[x] Just include the following code where you want it!
+[x] Don't forget to include the sponsors.js file, pointing to the correct path, and the relevant CSS files, as well.
 
 ```html
 <div class="grid_12">
