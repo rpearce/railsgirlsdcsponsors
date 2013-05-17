@@ -17,7 +17,9 @@
       displayText: 'Gold Sponsors',
       sponsors: [
         { sponsorName: 'LivingSocial', imgURL: 'images/LSLogo.jpg', linkHref: 'https://www.livingsocial.com' },
-        { sponsorName: 'CustomInk', imgURL: 'images/custom_ink_logo.png', linkHref: 'http://www.customink.com' },
+        { sponsorName: 'CustomInk', imgURL: 'images/custom_ink_logo.png', linkHref: 'http://www.customink.com' }
+        // this is commented out b/c there's no actual image.
+        // { sponsorName: 'SAIC', imgURL: '', linkHref: '' }
       ]
     },
     group3: {
@@ -25,14 +27,16 @@
       sponsors: [
         { sponsorName: 'SocialDriver', imgURL: 'images/socialdriver-logo.png', linkHref: 'http://socialdriver.com' },
         { sponsorName: 'ModCloth', imgURL: 'images/Modcloth-logo.png', linkHref: 'http://www.modcloth.com/' },
-        { sponsorName: 'Vox Media', imgURL: 'images/Vox-media-logo.jpg', linkHref: 'http://www.voxmedia.com' }
+        { sponsorName: 'Vox Media', imgURL: 'images/Vox-media-logo.jpg', linkHref: 'http://www.voxmedia.com' },
+        { sponsorName: 'Opscode', imgURL: 'images/Opscode_logo.png', linkHref: 'http://www.opscode.com' }
       ]
     },
     group4: {
       displayText: 'Bronze Sponsors',
       sponsors: [
         { sponsorName: 'Spree', imgURL: 'images/spree-logo.png', linkHref: 'http://spreecommerce.com' },
-        { sponsorName: 'InfernoRed Technology', imgURL: 'images/infernored_logo.jpg', linkHref: 'http://www.infernored.com' }
+        { sponsorName: 'InfernoRed Technology', imgURL: 'images/infernored_logo.jpg', linkHref: 'http://www.infernored.com' },
+        { sponsorName: 'General Assembly', imgURL: 'images/general_assembly_logo.png', linkHref: 'https://generalassemb.ly' }
       ]
     },
     group5: {
@@ -88,7 +92,7 @@
       */
     var html = '' +
       '<article class="sponsor-group">' +
-        '<header>' +
+        '<header class="sponsor-group-header">' +
           '<h3 class="sponsor-type">'+group.displayText+'</h3>' +
         '</header>' +
         sponsorsHTML +
